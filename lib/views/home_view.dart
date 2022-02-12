@@ -41,6 +41,7 @@ class _HomeState extends State<Home> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.white,
+        iconTheme: const IconThemeData(color: Colors.black),
         title: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: const [
@@ -54,6 +55,15 @@ class _HomeState extends State<Home> {
             )
           ],
         ),
+        actions: [
+          Opacity(
+            opacity: 0,
+            child: Container(
+              padding: const EdgeInsets.symmetric(horizontal: 16),
+              child: const Icon(Icons.save),
+            ),
+          )
+        ],
         centerTitle: true,
         elevation: 0.0,
       ),

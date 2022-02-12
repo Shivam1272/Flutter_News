@@ -20,6 +20,7 @@ class _ArticleViewState extends State<ArticleView> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
+          iconTheme: const IconThemeData(color: Colors.black),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [

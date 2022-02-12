@@ -36,6 +36,7 @@ class _CategoryViewState extends State<CategoryView> {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.white,
+          iconTheme: const IconThemeData(color: Colors.black),
           title: Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: const [
